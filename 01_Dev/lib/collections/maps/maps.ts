@@ -1,8 +1,7 @@
-import _ from 'lodash';
 import {Mongo} from 'meteor/mongo';
 import {ownsDocument} from '../../permissions'
-
 export let Maps = new Mongo.Collection('maps');
+import * as _ from 'lodash';
 
 Maps.allow({
   update: function(userId, post) { return ownsDocument(userId, post); },
