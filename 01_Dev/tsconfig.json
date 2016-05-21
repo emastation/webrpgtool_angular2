@@ -13,6 +13,7 @@
   "filesGlob": [
     "client/**/*.ts",
     "server/**/*.ts",
+    "lib/**/*.ts",
     "typings/**/*.d.ts"
   ],
   "exclude": [
