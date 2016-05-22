@@ -1,0 +1,13 @@
+<div class="ui segment">
+  <form [ngFormModel]="submitForm" #f="ngForm" (submit)="addGame(f.value)" class="ui form">
+    <div class="field">
+      <label>タイトル</label>
+      <input type="text" ngControl="title" placeholder="追加したいゲームのタイトルを入力してください。">
+    </div>
+    <div class="field">
+      <label>識別子</label>
+      <input type="text" ngControl="identifier" placeholder="追加したいゲームのユニークな識別子を入力してください。">
+    </div>
+    <button type="submit" class="ui button">作成</button>
+  </form>
+</div>

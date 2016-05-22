@@ -1,0 +1,1 @@
+/// <reference path="./commons/games.d.ts" />
